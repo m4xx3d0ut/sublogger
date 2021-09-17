@@ -7,33 +7,31 @@ I use the Python subprocess constructor frequently and find myself having to rew
 
 ### Example
 
-$ import sublogger
-$ log = sublogger.sublogger('test.log')
-$ cmd = "ls -lha"
-$ log.cmd_out(cmd)
+$ import sublogger<br/>
+$ log = sublogger.sublogger('test.log')<br/>
+$ cmd = "ls -lha"<br/>
+$ log.cmd_out(cmd)<br/>
 
 [$] total 36K
-[$] drwxr-xr-x 4 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 14:17 .
-[$] drwxr-xr-x 4 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 09:47 ..
-[$] drwxr-xr-x 8 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 14:16 .git
-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut   12 Sep 17 14:16 .gitignore
-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1.1K Sep 17 09:47 LICENSE
-[$] drwxr-xr-x 2 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 15:02 __pycache__
-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut  309 Sep 17 09:59 README.md
-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1.5K Sep 17 15:02 sublogger.py
-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut   45 Sep 17 15:02 test.log
+[$] drwxr-xr-x 4 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 14:17 .<br/>
+[$] drwxr-xr-x 4 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 09:47 ..<br/>
+[$] drwxr-xr-x 8 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 14:16 .git<br/>
+[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut   12 Sep 17 14:16 .gitignore<br/>
+[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1.1K Sep 17 09:47 LICENSE<br/>
+[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut  309 Sep 17 09:59 README.md<br/>
+[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1.5K Sep 17 15:02 sublogger.py<br/>
+[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut   45 Sep 17 15:02 test.log<br/>
 
 
 ### Example Log File
 
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] ls -lha
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] total 36K
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] drwxr-xr-x 4 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 14:17 .
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] drwxr-xr-x 4 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 09:47 ..
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] drwxr-xr-x 8 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 14:16 .git
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut   12 Sep 17 14:16 .gitignore
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1.1K Sep 17 09:47 LICENSE
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] drwxr-xr-x 2 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 15:02 __pycache__
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut  309 Sep 17 09:59 README.md
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1.5K Sep 17 15:02 sublogger.py
-17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1002 Sep 17 15:02 test.log
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] ls -lha<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] total 36K<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] drwxr-xr-x 4 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 14:17 .<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] drwxr-xr-x 4 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 09:47 ..<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] drwxr-xr-x 8 m4xx3d0ut m4xx3d0ut 4.0K Sep 17 14:16 .git<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut   12 Sep 17 14:16 .gitignore<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1.1K Sep 17 09:47 LICENSE<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut  309 Sep 17 09:59 README.md<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1.5K Sep 17 15:02 sublogger.py<br/>
+17-Sep-2021 (15:02:48)-m4xx3d0ut-[$] -rw-r--r-- 1 m4xx3d0ut m4xx3d0ut 1002 Sep 17 15:02 test.log<br/>
