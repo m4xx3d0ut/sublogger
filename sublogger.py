@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 """
-A simple logging module for subprocess commands.
+A simple logging module for subprocess Popen commands.  Displays output in
+terminal.  It writes to output.log by default, you can change this by setting
+log_file while intantiating, or you can turn logging off by setting log_on='n'.
 
 https://twitter.com/m4xx3d0ut
 https://github.com/m4xx3d0ut
@@ -19,13 +21,14 @@ class sublogger:
 
     default_log = 'ouput.log'
 
+    # If you don't set log_file when instantiating it will write to output.log
     def __init__(self, log_file=default_log, log_on='y'):
         # self.cmd = cmd
         self.log_file = log_file if log_file is not None else default_log
         self.log_on = log_on if log_on == 'y' else None
 
 
-    # Prints stdout of subprocess Popen
+    # Prints stdout of subprocess Popen and if log_on='y' writes to log file
     def cmd_out(self, cline):
 
         cmd = subprocess.Popen(shlex.split(cline), stderr=subprocess.PIPE, \
